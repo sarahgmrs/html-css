@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 199, 199);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        article {
+            background-color: lightcoral;
+            padding: 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+            border-radius: 0px 30px 0px 0px;
+        }
+        nav {
+            background-color: lightcoral;
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+            border-radius: 5px;
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            
+        }
+        nav > a:hover {
+            color: black;
+            text-decoration: line-through;
+        }
+        article > aside {
+            background-color: rgb(245, 99, 99);
+        }
+        footer {
+            background-color: rgb(245, 86, 86);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Notícias</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ut unde nesciunt ad illo! Optio architecto sint eligendi quis in recusandae eos praesentium tempore, adipisci nam ab iste rem voluptatem.</p>
+                <aside>Artigo escrito por José da Silva</aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVídeo</p>
+    </footer>
+
+
+</body>
+</html>

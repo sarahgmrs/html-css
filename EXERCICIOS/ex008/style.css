@@ -1,0 +1,26 @@
+div#d1 {
+    display: inline-block;
+    background-color: lightcoral;
+    border: 1px solid black;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+#d1:hover {
+    background-color: burlywood;
+}
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    color: black;
+    background-color: red;
+    width: 300px;
+}
+
+div:hover {
+    color: red;
+}
