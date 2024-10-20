@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+        }
+        div#i1{
+            flex: 0 1 150px;
+        } 
+
+        div#i2{
+            flex: 1 0 150px;
+        } 
+        
+        div#i3{
+            flex: 1 1 auto;
+        } 
+
+        /*
+        flex-grow + flex-shrink + flex-basis 
+         
+            flex: 0 1 150px;       
+
+            Exemplos muito usados:
+
+            flex: 0 1 auto; flex: initial // valores padrões
+
+            flex: 0 0 auto; flex: none // não cresce nem diminui, e o tamanho depende do container (Não ser flexível)
+
+            flex 1 1 auto; flex: auto // cresce e diminui e o limite de aumentar ou diminuir depende do conteudo (Máximo de flexibilidade)
+
+            flex: 3 = flex: 3 1 auto;
+
+        */
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+       
+    </div>
+
+    
+</body>
+</html>
