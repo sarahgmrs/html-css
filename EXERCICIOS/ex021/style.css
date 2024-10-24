@@ -49,7 +49,13 @@ space-around: divide o eixo transversal em partes iguais, e centraliza os itens 
 
 ITENS
 ORDER
-padrão 0
+padrão 0, ordena os itens em ordem crescente 
+style= order: N;
+align-self: posiciona cada item segundo sua ordem numerica
+
+FLEX-BASIS: tamanho dos itens
+auto: a largura dos itens é dada conforme o tamanho do seu conteudo
+
 
 
 */
@@ -68,6 +74,7 @@ div.item {
     background-color: lightgreen;
     border: 1px solid black;
     padding: 10px;
+
 }
 
 
