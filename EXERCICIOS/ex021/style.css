@@ -2,8 +2,10 @@
 
 /*
 
-main axis: eixo priincipal
+main axis: eixo principal
 cross axis: eixo transversal
+
+main start, main end, cross start, cross end
 
 flex-direction para fazer nav ?: logo flex-deirection: row  navegadores: flex-direction: row-reverse
 
@@ -14,18 +16,78 @@ wrap-reverse: o item vai quebrar na direção contraria do cross axis
 
 FLEX-FLOW: flex-direction + flex-wrap
 
+JUSTIFY-CONTENT: alinha conforme o main axis
+flex-start: os itens ficam grudados no main-start
+flex-end: ultimo item grudado no final
+center: todos os itens alinhados no meio do main axis
+space-between: primeiro item no main-start, ultimo item no main-end e os outros itens no centro com espaço igual entre si
+space-evenly: não coloca o primeiro e o ultimo itens grudados no main-star/main-end, e mantem espaçols iguais
+space-around: divide o espaço entre os itens de forma igualmente calculada
+
+
+ALIGN-ITEMS - transversal
+stretch: estica os itens conforme o tamanho do container
+flex-start: grudam no cross-start
+flex-end: grudam no cross-end
+center: posiciona no centro e divide em partes iguais o espaço até as extremidades
+
+
+CENTRALIZAÇÃO ABSOLUTA:
+justify-content: center;
+align-items: center;
+
+ALINHAMENTO DE CONTEUDO EMPACOTADO (SOMENTE QUANDO SE USA O WRAP)
+ALIGN-CONTENT: alinha os elementos no eixo cross axis mas enquanto estão empacotados
+stretch: valor padrão. estica os elementos quando há a quebra
+flex-start: todos os elementos grudados no cross-start, com espaço em branco na direção do cross-end]
+flex-end: todos os elementos grudados no cross-end, com espaço em branco na direção do cross-start
+center: vai criar espaços em branco iguais e alinhar o conteudo no meio do cross axis
+space-between: o conteudo q não quebrou permanece no cross-start enquanto o elemento de quebra gruda no cross-end, deixando um espaço entre eles
+space-evenly: coloca um espaço no cross end e start e alinha o conteudo com espaçamentos iguais 
+space-around: divide o eixo transversal em partes iguais, e centraliza os itens dentro dessas divisões 
+
+
+ITENS
+ORDER
+padrão 0
 
 
 */
 
 div.container {
+    margin-bottom: 20px;
     display: flex;
+    height: 200px;
     background-color: salmon;
     flex-flow: row wrap; 
+    justify-content: center;
+    align-items: center;
 }
 
 div.item {
     background-color: lightgreen;
     border: 1px solid black;
     padding: 10px;
+}
+
+
+
+
+
+
+div.conteudo{
+    display: flex;
+    height: 400px;
+    background-color: coral;
+    flex-flow: row wrap;
+    align-content: space-between;
+
+
+}
+
+div.itens {
+    background-color: lightseagreen;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
 }
