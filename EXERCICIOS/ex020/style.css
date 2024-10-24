@@ -1,0 +1,45 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'aside article section'
+    'footer footer footer'
+    ;
+    gap: 10px;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    
+}
+
+section {
+    grid-area: section;
+    background-color: aqua;
+}
+article {
+    grid-area: article;
+    background-color: lightcoral;
+}
+aside {
+    grid-area: aside;
+    background-color: blueviolet;
+}
+footer {
+    grid-area: footer;
+    background-color: gray;
+}
+
+.item {
+    height: 200px;
+}
+
+

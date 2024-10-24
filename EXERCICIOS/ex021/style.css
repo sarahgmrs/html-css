@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+
+main axis: eixo priincipal
+cross axis: eixo transversal
+
+flex-direction para fazer nav ?: logo flex-deirection: row  navegadores: flex-direction: row-reverse
+
+EMPACOTAMENTO
+flex-wrap: posiciona os itens conforme o tamanho diminui ou aumenta
+flex-wrap: nowrap - estica os itens
+wrap-reverse: o item vai quebrar na direção contraria do cross axis
+
+FLEX-FLOW: flex-direction + flex-wrap
+
+
+
+*/
+
+div.container {
+    display: flex;
+    background-color: salmon;
+    flex-flow: row wrap; 
+}
+
+div.item {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}
