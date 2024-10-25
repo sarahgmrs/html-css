@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+            <div id="formulario" class="item">
+        <section id="login" class="container">
+                <h1 order="0">Login</h1>
+                <p>Seja bem-vindo(a) novamente!</p>
+        </section>
+                <form action="login.php" method="post" autocomplete="on">
+                    <span class="material-symbols-outlined">mail</span>
+                    <input type="email" name="email" id="iemail" class="item" placeholder="Insira seu e-mail" autocomplete="email" required maxlength="30">
+                    <label for="iemail">Login</label>
+                    </div>
+                    <div class="container2">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="senha" id="isenha" class="item2" placeholder="Insira sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div class="container3">
+                        <input type="submit" name="enviar" id="ienviar" value="Entrar" class="item3">
+                        <a href="#" class="botao"></a>
+                    </div>
+                </form>
+
+
+    </main>
+    
+</body>
+</html>

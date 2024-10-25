@@ -7,14 +7,14 @@
 }
 
 nav.container {
-    background-color: rgb(243, 202, 197);
+    background-color: rgb(247, 225, 223);
     display: flex;
-    padding: 50px;
+    padding: 30px;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.144);
 }
-
 .links {
     text-decoration: none;
     padding-right: 40px;
@@ -27,5 +27,6 @@ nav.container {
     color: white;
     padding: 20px 40px; 
     border: 1px dashed black;
+    border-radius: 3px;
 }
 
