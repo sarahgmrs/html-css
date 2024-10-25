@@ -29,14 +29,3 @@ nav.container {
     border: 1px dashed black;
 }
 
-div.container2 {
-    display: flex;
-    width: 1000px;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.imagem {
-    block-size: 60px;
-}
