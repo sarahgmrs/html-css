@@ -41,6 +41,7 @@ main {
     background-color: white;
     padding: 150px 200px;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 section > p {
