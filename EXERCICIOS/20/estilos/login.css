@@ -41,10 +41,26 @@ main {
     background-color: white;
     padding: 150px 200px;
     border-radius: 10px;
-    border: 2px solid black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.247);
+    border-right: 2px solid rgba(0, 0, 0, 0.247);
 }
 
 section > p {
     padding: 20px;
 
 }
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 40%;
+    height: 35px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+
